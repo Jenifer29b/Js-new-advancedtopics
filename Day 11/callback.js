@@ -36,11 +36,11 @@ let objvar = (variables) => {
 }
 obj(objvar)
 
+//callback function that accessing the array
 function arr(callback) {
     let num = [1, 2, 3, 4, 5]
     callback(num)
 }
-
 let array = (num) => {
     for (arrnum of num) {
         console.log(arrnum*3)
