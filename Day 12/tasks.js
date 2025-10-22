@@ -14,18 +14,7 @@ console.log(person.city)
 delete person.hobby
 console.log(person)
 
-let user = {
-    name: "ruban",
-    sayhii : function () {
-        console.log("hii I am",this.name)
-    },
-    changename: function () {
-        let { name : surname } = user
-        console.log(surname)
-    } 
-}
-user.sayhii()
-user.changename()
+
 
 let laptop = {
     brand: "HP",
