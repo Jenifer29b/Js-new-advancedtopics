@@ -1,6 +1,6 @@
 //object.freeze means we can't able to modify ,add or delete the exisiting porperty
 //its immutable
-
+//object.freeze is shallow freeze which means nested properties are still mutable
 let car = {
     brand: "honda",
     model: "model1",
