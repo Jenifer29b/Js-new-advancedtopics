@@ -62,3 +62,13 @@ let intoobj = arr3.reduce((prev, curr, index) => {
     return prev
 }, [] )
 console.log(intoobj)
+
+// count no.of.elements
+
+let fruits = ["apple", "Mango", "apple", "Mango", "apple", "banana"]
+
+let count = fruits.reduce((prev, curr) => {
+    prev[curr] = (prev[curr] || 0) + 1
+    return prev
+}, {})
+console.log(count)
