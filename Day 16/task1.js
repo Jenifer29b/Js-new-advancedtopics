@@ -24,3 +24,12 @@ let counts = words.reduce((prev, curr) => {
     return prev
 }, {})
 console.log(counts)
+
+let names = "Jenifer"
+
+
+let count = names.split('').reduce((prev, curr) => {
+    prev[curr] = (prev[curr] || 0) + 1
+    return prev
+},{})
+console.log(count)
