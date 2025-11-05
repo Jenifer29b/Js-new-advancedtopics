@@ -48,3 +48,19 @@ let filterage = obj.filter((value) => value.age >= 20)
 console.log(filterage)
 
 
+let number2 = [1, 2, 3, 4, 5, 6, 7]
+
+let even = number2.filter((value) => value % 2 == 0).length
+console.log(even)
+
+let age = [{ name: "michael", age: 20 }, { name: "jeni", age: 30 }, { name: "ruban", age: 15 }]
+
+let findage = age.filter((value) => value.age > 18)
+let upper = findage.map((value) => value.name.toUpperCase())
+console.log(findage)
+console.log(upper)
+
+let marks = [90, 80, 70, 60, 50, 40, 30, 20, 10]
+
+let passmark = marks.filter((value) => value > 35).reduce((prev,curr) => prev+curr)
+console.log(passmark)
