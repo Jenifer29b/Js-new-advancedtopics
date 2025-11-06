@@ -12,6 +12,7 @@ dog.bark = function () {
 
 dog.eat()
 dog.bark()
+console.log(Object.getPrototypeOf(dog))
 
 // contructor function :
 
