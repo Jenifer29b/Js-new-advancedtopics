@@ -33,3 +33,8 @@ console.log(trimrep)
 let titlecase = sen.trim().split(" ").map((word) => word.charAt(0).toUpperCase()+ word.slice(1)).join(" ")
 console.log(titlecase)
 
+
+let arr = "hii helo how about you"
+
+let caps = arr.split(" ").map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(" ")
+console.log(caps)

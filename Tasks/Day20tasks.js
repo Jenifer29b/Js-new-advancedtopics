@@ -50,9 +50,9 @@ class captilize{
         let sep = name.split(" ")
         let first = sep[0].charAt(0).toUpperCase() + sep[0].slice(1)
         console.log(first)
-        let last = sep[1].charAt(0).toUpperCase() + sep[1].slice(1)
+        let last = (sep[1].charAt(0).toUpperCase() + sep[1].slice(1))
         console.log(last)
-        let total = first +  last
+        let total = [first,last].join(" ")
         console.log(total)
     }
 }
