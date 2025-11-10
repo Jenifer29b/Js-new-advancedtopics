@@ -15,6 +15,9 @@ function addtask(title) {
 addtask("learning Javascript")
 addtask("learning react")
 addtask("learning database")
+addtask("leatning OOPS")
+addtask("Learning HTML&CSS")
+addtask("Learning Bootstarp")
 
 function showtask() {
     for (let task of tasks) {
@@ -34,5 +37,34 @@ function markdone(id) {
     }
 }
 markdone(1)
+markdone(5)
+markdone(6)
 showtask()
+
+function deletetask(id) {
+    let find = tasks.findIndex((value) => value.id === id)
+    console.log(find)
+
+    if (find !== -1) {
+        tasks.splice(find, 1)
+        console.log(`task is deleted ${find.name}` )
+    } else {
+        console.log("Contact not deleted")
+    }
+}
+
+deletetask(1)
+showtask()
+
+function Showpending() {
+    let search = tasks.filter((value) => value.done == false)
+    console.log(search)
+}
+Showpending()
+
+function Showfinished() {
+    let showtask = tasks.filter((value) => value.done == true)
+    console.log(showtask)
+}
+Showfinished()
 
