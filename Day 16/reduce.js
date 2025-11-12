@@ -58,9 +58,9 @@ console.log(intoarr)
 let arr3 = [11, 22, 33, 44, 55]
 
 let intoobj = arr3.reduce((prev, curr, index) => {
-    prev.push( curr, index )
+    prev[index] = curr
     return prev
-}, [] )
+}, {} )
 console.log(intoobj)
 
 // count no.of.elements

@@ -18,7 +18,8 @@ for (let values of Object.values(person)) {
     console.log(`the values are ${values}`)
 }
 
-
-Object.keys(person).forEach((values) => {
-    console.log(values)
+// because of forEach second parameter is index so returns index as a value.. so avoid we have destructe first
+Object.entries(person).forEach(([key,value]) => {
+    console.log(`${key} : ${value}`)
 })
+
