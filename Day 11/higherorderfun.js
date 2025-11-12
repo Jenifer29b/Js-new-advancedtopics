@@ -16,7 +16,7 @@ function addition(a,b) {
     return a+b
 }
 console.log(adds(5, 5, addition))
-
+  
 
 // here it is similar to callback but it is higher order function
 function greet(name, greeting) {

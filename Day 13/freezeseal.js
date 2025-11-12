@@ -14,6 +14,25 @@ console.log(car)
 car.brand = "tesla"
 console.log(car.brand)
 
+//shallow freeze of obect.freeze
+
+let student = {
+    name : "Jeni",
+    age : 21,
+    place : "Chennai",
+    address : {
+        country : "India",
+        city : "madurai"
+    }
+}
+
+
+Object.freeze(student)
+student.grade = "A"
+console.log(student)
+student.address.city = "Banglore"
+console.log(student.address.city)
+
 //object.seal means we can modify the exisitng porperty but we can't able to delete or add any item
 // it mutable only exisitng item
 let student = {
